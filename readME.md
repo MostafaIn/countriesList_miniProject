@@ -4,11 +4,11 @@
 
 ##Demo
 
-[countries list sorting and search App]()
+[countries list sorting and search App](https://mostafain.github.io/countriesList_miniProject/WorldCountriesListIndex.html)
 
 ## Screenshot
 
-![Example screenshot]("countriesList_Screenshot.png")
+![Example screenshot](countriesList_Screenshot.png)
 
 ## Technologies
 
@@ -26,4 +26,4 @@ Project is: ongoing_,
 Created by [mostafa](https://github.mostafaIn.com) 
 
 feel free to contact me!
-Email: mostafa.hazareh@integrify.io
+[Email:](mostafa.hazareh@integrify.io)
