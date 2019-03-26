@@ -1,0 +1,128 @@
+
+body{
+    background-color: #eee;
+    max-width: 1600px;
+}
+/* this part contain the head title and the input box to search for
+ and also the sort button */
+header{
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 15px;
+}
+header h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: calc(0.8vw + 18px);
+}
+header h5{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: calc(0.4vw + 10px);
+}
+header div.showMe{
+    display: flex;
+    justify-content: center;
+}
+header input.searchBox{
+    background-color: #fff;
+    /* border: none; */
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    padding: 0.7rem;
+    width: 50%;
+    font-size: calc(0.5vw + 12px);
+}
+header div.sortList{
+    background-color: #6e0905;
+    border: 2px solid #bbb;
+    border-radius: 100%;
+    color: #3e3e3e;
+    height: 43px;
+    width: 43px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5px;
+}
+header div.sortList i{
+    font-size: 25px;
+    margin: 9% auto;
+    padding: 5px;
+    color: white;
+    
+}
+
+/* in this part there are two buttons 
+to filter out the search method */
+div.controllerBtns{
+    display:flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    font-size: calc(0.2vw + 10px);
+    width: 40%;
+    margin: auto;
+}
+div.Btn{
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    flex-basis: 40%;
+    text-align: center;
+    cursor: pointer;
+}
+div.Btn label{
+    cursor: pointer;
+}
+input.search{
+    visibility: hidden;  
+}
+.Btn input[type="radio"]:checked + label{
+    color: #6e0905;
+}
+
+
+
+
+main{
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+
+
+
+/* ////////////////////////////////////// */
+.controllerInfos{
+    border-left: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    flex-basis: 45%;
+    margin-right: 2vw;
+}
+.controllerInfos span{
+    margin: 10px;
+}
+
+.container{
+    /* border: 3px solid black; */
+}
+/* .c input+label{
+    padding:  0.3vw;
+    background-color: #9ECEB9
+}
+.c input:checked+label{
+    padding: 0.3vw;
+    background-color: #1EB59A;
+    color: white;
+} */
+
+
+/*  these are created by javascript */
+.countryBox{
+    font-size: calc(0.6vw + 14px);
+    padding: 20px;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 20px;
+}
