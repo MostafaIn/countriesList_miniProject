@@ -3,6 +3,13 @@ body{
     background-color: #eee;
     max-width: 1600px;
 }
+main{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px inset;
+    width: 80%;
+    margin: 20px auto;
+    padding: 40px;
+}
 /* this part contain the head title and the input box to search for
  and also the sort button */
 header{
@@ -22,7 +29,7 @@ header div.showMe{
     display: flex;
     justify-content: center;
 }
-header input.searchBox{
+header input.searchBar{
     background-color: #fff;
     /* border: none; */
     border: 1px solid black;
@@ -32,7 +39,7 @@ header input.searchBox{
     width: 50%;
     font-size: calc(0.5vw + 12px);
 }
-header div.sortList{
+header div.sortingList{
     background-color: #6e0905;
     border: 2px solid #bbb;
     border-radius: 100%;
@@ -43,7 +50,7 @@ header div.sortList{
     cursor: pointer;
     margin-right: 5px;
 }
-header div.sortList i{
+header div.sortingList i{
     font-size: 25px;
     margin: 9% auto;
     padding: 5px;
@@ -55,40 +62,26 @@ header div.sortList i{
 to filter out the search method */
 div.controllerBtns{
     display:flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    font-size: calc(0.2vw + 10px);
+    flex-wrap: wrap;
     width: 40%;
     margin: auto;
 }
-div.Btn{
+button.Btn{
     background-color: #eee;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
-    flex-basis: 40%;
+    font-size: calc(0.2vw + 12px);
+    flex-basis: 30%;
     text-align: center;
     cursor: pointer;
-}
-div.Btn label{
-    cursor: pointer;
-}
-input.search{
-    visibility: hidden;  
-}
-.Btn input[type="radio"]:checked + label{
-    color: #6e0905;
+    outline:none;
+    flex: 1;
+    margin: 5px;
 }
 
 
 
-
-main{
-    background-color: white;
-    width: 80%;
-    margin: 20px auto;
-    padding: 40px;
-}
 
 
 

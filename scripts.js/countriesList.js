@@ -1,4 +1,3 @@
-"use strict"
 const country_list = [
     "Afghanistan",
     "Albania",
@@ -209,57 +208,3 @@ const country_list = [
     "Zambia",
     "Zimbabwe"
 ];
-const searchBox = document.querySelector(".searchBox");
-const container = document.querySelector(".container");
-const sortingList = document.querySelector(".sortList");
-const searchByAnyWord = document.querySelector(".byAnyWord");
-
-window.onload = (event) => {
-    displayCountryList();
-}
-
-sortingList.addEventListener("click", function (e) {
-    container.innerHTML=" ";
-    const sortingIcon = document.querySelector('.fas');
-    //  const asc= document.createElement('i');
-    if (sortingIcon.className === 'fas fa-sort-alpha-down') {
-        sortingIcon.setAttribute("class", "fas fa-sort-alpha-up");
-        console.log('z => a');
-        country_list.reverse();
-        displayCountryList();
-    } else {
-        sortingIcon.setAttribute("class", "fas fa-sort-alpha-down");
-        console.log('a => z');
-        country_list.sort();
-        displayCountryList();
-    }
-    e.preventDefault();
-});
-
-const matchWord= country_list.filter()
-searchByAnyWord.addEventListener("click",function(e){
-    container.innerHTML=" ";
-    searchBox.addEventListener("keyup", function() {
-        country_list.filter
-    })
-    country_list.includes(searchBox.value);
-    console.log('mina DDD');
-});
-
-function displayCountryList() {
-
-    for (let i = 0; i < country_list.length; i++) {
-        let r = Math.floor(Math.random() * 256);
-        let g = Math.floor(Math.random() * 256);
-        let b = Math.floor(Math.random() * 256);
-        const colorCode = `rgb(${r},${g},${b})`;
-        // create  single div for every items of country_list.
-        const countryBox = document.createElement('div');
-        countryBox.setAttribute("class", "countryBox");
-        // countryBox.classList.add("countryBox");
-        countryBox.textContent = country_list[i];
-        countryBox.style.backgroundColor = colorCode;
-        container.appendChild(countryBox);
-    }
-
-}

@@ -18,24 +18,18 @@
             <h1 id="tt">World Countries List</h1>
             <h5>Total number of countries are 193</h5>
             <div class="showMe">
-                <div class="sortList">
+                <div class="sortingList">
                     <i class="fas fa-sort-alpha-down"></i>
                 </div>
-                <input type="text" class="searchBox" placeholder="search for countries ...">
+                <input type="text" class="searchBar" placeholder="search for countries ...">
             </div>
         </header>
         <div class="controllerBtns">
-            <div class="Btn byAnyWord">
-                <input type="radio" class="search" id="wordS" name="radio">
-                <label for="wordS">search by any word</label>
-            </div>
-            <div class="Btn byStartingWord">
-                <input type="radio" class="search" id="letterS" name="radio">
-                <label for="letterS" >starting word </label>
-            </div>
+            <button class="Btn searchByAnyWord">search by any word</button>
+            <button class="Btn sortStartingWord">starting word</button>
         </div>
         <div class="controllerInfos">
-            <span>Total number of countries are 193</span>
+            <span class="countryItems"></span>
             <span></span>
         </div>
         <div class="container">
@@ -43,7 +37,8 @@
         </div>
 
     </main>
-    <script src="worldCountriesScript.js"></script>
+    <script src="./scripts.js/countriesList.js"></script>
+    <script src="./scripts.js/worldCountriesScript.js"></script>
 </body>
 
 </html>
