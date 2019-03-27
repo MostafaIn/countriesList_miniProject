@@ -63,6 +63,7 @@ to filter out the search method */
 div.controllerBtns{
     display:flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
     width: 40%;
     margin: auto;
 }
@@ -74,10 +75,15 @@ button.Btn{
     font-size: calc(0.2vw + 12px);
     flex-basis: 30%;
     text-align: center;
-    cursor: pointer;
     outline:none;
     flex: 1;
     margin: 5px;
+}
+button.Btn:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 0px 6px 12px -4px rgba(87, 86, 86, 0.5);
 }
 
 

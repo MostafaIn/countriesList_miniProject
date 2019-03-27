@@ -18,12 +18,10 @@ sortingList.addEventListener("click", function (e) {
     if (sortingIcon.className === 'fas fa-sort-alpha-down') {
         sortingIcon.setAttribute("class", "fas fa-sort-alpha-up");
         console.log('z => a');
-
         displayCountryList(country_list.reverse());
     } else {
         sortingIcon.setAttribute("class", "fas fa-sort-alpha-down");
         console.log('a => z');
-
         displayCountryList(country_list.sort());
     }
     e.preventDefault();
@@ -53,7 +51,7 @@ function displayCountryList(arr) {
 
 
 searchByAnyWord.addEventListener("click", function () {
-     container.innerHTML = " ";
+    container.innerHTML = " ";
     searchBar.textContent = '';
     searchByAnyWord.setAttribute('style', 'font-weight: bolder; background-color: #7B2A01; color: white; ');
     sortStartingWord.setAttribute('style', 'font-weight: normal; background-color: #eee; color: black; ');
@@ -63,12 +61,13 @@ searchByAnyWord.addEventListener("click", function () {
         console.log(filtered);
         console.log(e.target.value);
         displayCountryList(filtered);
+        makeSort(filtered);
     });
 
 });
 
 sortStartingWord.addEventListener("click", function () {
-     container.innerHTML = " ";
+    container.innerHTML = " ";
     searchBar.textContent = '';
     sortStartingWord.setAttribute('style', 'font-weight: bolder; background-color: #7B2A01; color: white; ');
     searchByAnyWord.setAttribute('style', 'font-weight: normal; background-color: #eee; color: black; ');
